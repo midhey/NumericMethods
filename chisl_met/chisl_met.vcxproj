@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClCompile Include="chisl_met.cpp" />
     <ClCompile Include="hord.cpp" />
+    <ClCompile Include="iter.cpp" />
     <ClCompile Include="kas.cpp" />
     <ClCompile Include="monte.cpp" />
     <ClCompile Include="simpson.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hord.h" />
+    <ClInclude Include="iter.h" />
     <ClInclude Include="kas.h" />
     <ClInclude Include="monte.h" />
     <ClInclude Include="simpson.h" />

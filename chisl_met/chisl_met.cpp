@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <cmath>
 #include <iomanip>
+#include "iter.h"
 #include "kas.h"
 #include "hord.h"
 #include "simpson.h"
@@ -13,7 +14,7 @@ void menu() {
 	choice = 100;
 	do
 	{
-		cout << "1. Метод Хорд\n2. Метод касательных\n3. Метод хорд\n4. Метод Симпсона\n5. Метод Монте-Карло";
+		cout << "1. Метод итераций\n2. Метод касательных\n3. Метод хорд\n4. Метод Симпсона\n5. Метод Монте-Карло";
 
 		cout << "\n\nВыберите пункт меню:";
 		cin >> choice;
@@ -22,6 +23,9 @@ void menu() {
 
 		switch (choice)
 		{
+		case 1:
+			iteration();
+			break;
 		case 2:
 			kas_a(0, 2, 0.1, 0);
 			cout << "\n\n\n\n";

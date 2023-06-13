@@ -5,7 +5,7 @@
 using namespace std;
 
 //Функция
-float f(float x)
+float f_monte(float x)
 {
 	return (x + 1)*sin(x);
 }
@@ -29,7 +29,7 @@ void Monte(float a, float b, float N)
 		//Вычисляем x по формуле
 		x = a + (b - a) * dis(gen);
 		//Вычисляем сумму по формуле
-		sum += f(x) * H;
+		sum += f_monte(x) * H;
 	}
 	cout << sum;
 }
