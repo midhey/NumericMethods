@@ -1,13 +1,13 @@
 #ifndef HORD_H
 #define HORD_H
 
-float f(float x);
+float f_hord(float x);
 
 //Производная функции
-float f1(float x);
+float f1_hord(float x);
 
 //Втория производная функции
-float f2(float x);
+float f2_hord(float x);
 
 
 float hord(float a, float b, float e);
